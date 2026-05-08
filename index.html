@@ -26,7 +26,7 @@
 
             try {
                 // 내 서버(Vercel Function)에 요청을 보냅니다.
-                const response = await fetch('/api/Weather');
+                const response = await fetch('/api/weather');
                 const data = await response.json();
 
                 if (data.response.header.resultCode === "00") {
